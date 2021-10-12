@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/postImage"
+        android:background="@color/design_default_color_on_secondary"
+        />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/postTitle"
+        android:layout_below="@id/postImage"
+        android:layout_marginTop="10dp"
+
+        android:hint="Title"
+        android:background="#f4f4f4"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/postDescription"
+        android:hint="Description"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/postTitle"
+        android:background="#f4f4f4"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_below="@id/postDescription"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_baseline_like"
+        android:layout_below="@id/postDescription"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginLeft="10dp"
+        tools:ignore="VectorDrawableCompat" />
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_baseline_dislike"
+        android:layout_marginTop="10dp"
+
+        android:layout_below="@id/postDescription"
+        android:layout_marginLeft="40dp"
+        tools:ignore="VectorDrawableCompat" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_baseline_comment"
+        android:layout_below="@id/postDescription"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginLeft="90dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/postDescription"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="13dp"
+        app:srcCompat="@drawable/ic_baseline_share"
+        tools:ignore="VectorDrawableCompat" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_comment"
+        android:hint="Add your views here!!"
+        android:layout_below="@id/imageView3"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/imageView3"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/ic_baseline_arrow"
+        tools:ignore="VectorDrawableCompat" />
+</RelativeLayout>
